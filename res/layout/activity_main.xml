@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/tajmahal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.scrapbook.MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/eilf_tower"
+        android:cropToPadding="false"
+        android:src="@drawable/eifl" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/victoria_falls" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/tajmahal" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView4"
+        android:src="@drawable/egypt" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginRight="26dp"
+        android:text="Eiffel Tower"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginRight="20dp"
+        android:text="Pyramid"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/imageView2"
+        android:text="Taj Mahal"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/textView2"
+        android:text="Victoria Falls"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
